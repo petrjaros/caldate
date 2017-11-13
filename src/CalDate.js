@@ -1,6 +1,5 @@
 'use strict'
 
-const moment = require('moment-timezone')
 const toNumber = require('./utils').toNumber
 const isDate = require('./utils').isDate
 const pad0 = require('./utils').pad0
@@ -180,11 +179,7 @@ class CalDate {
    * @return {Date}
    */
   toTimezone (timezone) {
-    if (timezone) {
-      return new Date(moment.tz(this.toString(), timezone).format())
-    } else {
-      return this.toDate()
-    }
+     return this.toDate()
   }
 
   /**
