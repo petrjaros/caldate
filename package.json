@@ -15,7 +15,6 @@
     "clean": "rimraf coverage node_modules"
   },
   "dependencies": {
-    "moment-timezone": "^0.5.3"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",
